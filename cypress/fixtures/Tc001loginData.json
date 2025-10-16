@@ -1,0 +1,11 @@
+{
+  "admin":{
+   "email": "admin@gmail.com",
+    "password": "aurora10"
+  } ,
+  "customer":{
+    "email": "barbadillo@gmail.com",
+    "password": "aurora10"
+  }
+  
+}
