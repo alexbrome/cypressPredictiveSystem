@@ -7,7 +7,7 @@ describe("Delete Wine Prediction", () => {
 
     before(() => {
         //Visita la URL
-        cy.visit("localhost:4200")
+        cy.visit("http://localhost:4200")
         //Usa el comando personalizado para login como admin  
         cy.loginAdmin(loginData.admin.email, loginData.admin.password)
     })

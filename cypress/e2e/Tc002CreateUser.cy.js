@@ -3,7 +3,7 @@ describe("Creat User with Admin logged",()=>{
 let userCreated = require('../fixtures/Tc002CreateUser') //Importa los datos de usuario desde el archivo fixtures
 let loginData = require('../fixtures/Tc001loginData')   //Importa los datos de login desde el archivo fixtures
 beforeEach(()=>{
-cy.visit("localhost:4200") //Visita la URL
+cy.visit("http://localhost:4200") //Visita la URL
 })
 
 //Admin Login

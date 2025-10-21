@@ -7,7 +7,7 @@ let userToDelete = require("../fixtures/Tc002CreateUser")
 let loginData = require('../fixtures/Tc001loginData')   
 
 before(()=>{
-    cy.visit("localhost:4200") //Visita la URL
+    cy.visit("http://localhost:4200") //Visita la URL
     cy.loginAdmin(loginData.admin.email, loginData.admin.password) //Usa el comando personalizado para login como admin
 })
 

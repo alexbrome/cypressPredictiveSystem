@@ -3,7 +3,7 @@ describe("Login with both Admin and user roles",()=>{
 let loginData = require('../fixtures/Tc001loginData') //Importa los datos de login desde el archivo fixtures
 
 beforeEach(()=>{
-cy.visit("localhost:4200") //Visita la URL
+cy.visit("http://localhost:4200") //Visita la URL
 })
 
 //Admin Login
