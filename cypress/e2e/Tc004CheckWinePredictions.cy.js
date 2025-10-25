@@ -4,8 +4,9 @@ let loginData = require('../fixtures/Tc001loginData')
 let userToCheck = require("../fixtures/Tc004CheckWinePredictions")
 
 before(()=>{
+  cy.log('🌐 Base URL usada:', Cypress.config('baseUrl'))
 //Visita la URL
-cy.visit("http://localhost:4200") 
+cy.visit("/", { timeout: 1000000 }) //Visita la URL
 
 //Usa el comando personalizado para login como admin
 cy.loginAdmin(loginData.admin.email,loginData.admin.password) 

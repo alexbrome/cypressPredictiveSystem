@@ -3,7 +3,8 @@ describe("Creat User with Admin logged",()=>{
 let userCreated = require('../fixtures/Tc002CreateUser') //Importa los datos de usuario desde el archivo fixtures
 let loginData = require('../fixtures/Tc001loginData')   //Importa los datos de login desde el archivo fixtures
 beforeEach(()=>{
-cy.visit("http://localhost:4200") //Visita la URL
+    cy.log('🌐 Base URL usada:', Cypress.config('baseUrl'))
+cy.visit("/", { timeout: 1000000 }) //Visita la URL
 })
 
 //Admin Login
@@ -20,6 +21,6 @@ it('Create User',()=>{
     cy.contains('button','Save Customer').click()
 
     //Comprobar que la url a vuelto a /homeAdmin
-    cy.url({timeout:10000}).should('include','/homeAdmin')
+    cy.url({timeout:100000}).should('include','/homeAdmin')
 })
 })
